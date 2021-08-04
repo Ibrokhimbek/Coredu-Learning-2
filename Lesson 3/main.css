@@ -1,0 +1,17 @@
+button {
+    color: white;
+    background-color: black;
+    font-size: 20px;
+}
+
+.text {
+    color: red;
+}
+
+.ibrohim {
+    color: rgb(250, 31, 195);
+}
+
+#header {
+    color: blue !important;
+}
