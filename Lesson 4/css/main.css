@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    margin-top: 30px;
+}
+/* Navbar styles */
+.name {
+    color: red;
+    text-align: center;
+    font-size: 90px;
+}
+
+.name-2 {
+    color: blue;
+    text-align: right;
+}
+
+p.name {
+    color: cornflowerblue;
+    font-size: 30px;
+    font-weight: 900; /* 100-900 */
+    text-decoration: underline;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    line-height: 40px;
+    word-spacing: 10px;
+    text-shadow: 2px -2px 0px white;
+}
+
+.name , .name-2 {
+    background-color: black; /* this code will change the background color of element which was named ".name, .name-2"*/
+}
+
+h1, p {
+    padding: 10px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border: 5px solid red;
+    border-radius: 10px 8px 3px 0;
+    color: white;
+    background-color: rgb(255, 99, 71);
+    padding: 20px; /* padding hamma tomondan */
+    padding: 40px 30px 20px 10px;
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    margin: 20px; /* margin hamma tomondan */
+    margin: 40px 30px 20px 10px;
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.bg-img {
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/bg-img.jpg);
+    /* background-color: black; */
+    /* background-size: contain; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    /* opacity: 0.8; */
+}
