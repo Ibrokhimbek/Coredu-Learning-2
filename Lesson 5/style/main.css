@@ -1,0 +1,95 @@
+/* Index html */
+.jalilov {
+    color: blue;
+}
+
+/* Second html */
+body 
+{
+    height: 2000px;
+}
+
+.navbar {
+    background-color: #888;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar ul li{
+    display: inline-block;
+    padding: 15px 10px;
+}
+
+.navbar ul li a {
+    padding: 10px 5px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+}
+
+#inputName {
+    /* display: none; */
+    /* visibility: hidden; */
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 22px;
+}
+
+.container
+{
+    max-width: 1200px;
+    margin-top: 130px !important;
+    margin: 0 auto;
+    background-color: red;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90px;
+    height: 90px;
+    background-color: blue;
+    /* animation-name: anime;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear; */
+    animation: anime 2s infinite alternate linear;
+}
+
+@keyframes anime {
+    0% {
+        transform: translateX(-250px) translateY(-100px) rotate(0deg);
+        border-radius: 0;
+        background-color: blue;
+    }
+    50%{
+        transform: translateX(-450px) translateY(-50px) rotate(180deg) scale(3);
+    }
+    100% {
+        border-radius: 40px;
+        transform: translateX(200px) translateY(100px) rotate(360deg);
+        background-color: chartreuse;
+    }
+}
+
+.paragraf {
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 120px;
+    border: 3px solid rgb(0, 0, 0);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
