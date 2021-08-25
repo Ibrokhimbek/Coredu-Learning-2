@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box !important;
+}
+
+.carusel_image {
+    height: 600px;
+    object-fit: cover;
+}
+
+.row, .col-md-6 {
+    margin: 0;
+    padding: 0;
+}

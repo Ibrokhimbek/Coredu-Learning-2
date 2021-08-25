@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 9 | Bootstrap 4</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Coredu</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- <div class="container">
+        <div class="row">
+            <div class="col-md-6" style="border: 1px solid red;">Birinchi div</div>
+            <div class="col-md-6" style="border: 1px solid red;">Ikkinchi div</div>
+        </div>
+      </div> -->
+
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="1000">
+            <img src="images/carusel-item-1.jpg" class="d-block w-100 carusel_image" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="1000">
+            <img src="images/carusel-item-2.jpg" class="d-block w-100 carusel_image" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="1000">
+            <img src="images/carusel-item-3.jpg" class="d-block w-100 carusel_image" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="simple_section">
+              <div class="row">
+                  <div class="col-md-6">
+                      <img src="images/carusel-item-2.jpg" alt="photo" width="100%" height="auto">
+                  </div>
+                  <div class="col-md-6 p-5">
+                      <h1>Hilton Hotel</h1>
+                      <p style="width: 100%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eaque eum, nobis totam deserunt expedita! Suscipit dicta quaerat soluta nesciunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aliquam odit hic animi voluptates fugiat corporis natus maiores accusamus a est ullam labore iste beatae modi, tempora asperiores soluta commodi, vel quos amet, officiis nam quod laboriosam! Perferendis, esse temporibus!</p>
+                      <a href="#" class="btn btn-primary">More</a>
+                  </div>
+              </div>
+      </div>
+
+      <div class="simple_section">
+              <div class="row">
+                  <div class="col-md-6 p-5">
+                      <h1>Sandland</h1>
+                      <p style="width: 100%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eaque eum, nobis totam deserunt expedita! Suscipit dicta quaerat soluta nesciunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aliquam odit hic animi voluptates fugiat corporis natus maiores accusamus a est ullam labore iste beatae modi, tempora asperiores soluta commodi, vel quos amet, officiis nam quod laboriosam! Perferendis, esse temporibus!</p>
+                      <a href="#" class="btn btn-primary">More</a>
+                  </div>
+                  <div class="col-md-6">
+                    <img src="images/carusel-item-3.jpg" alt="photo" width="100%" height="auto">
+                </div>
+              </div>
+      </div>
+
+      <footer class="py-3 d-flex justify-content-center align-items-center">
+          Copyrights &copy; 2021
+      </footer>
+
+      <script src="js/bundle.min.js"></script>
+</body>
+</html>
