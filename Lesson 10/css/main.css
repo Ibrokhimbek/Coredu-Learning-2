@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box !important;
+}
+
+.container {
+  height: 100%;
+}
+
+.carusel_image {
+  height: 600px;
+  object-fit: cover;
+}
+
+.row,
+.col-md-6 {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-item {
+  position: relative;
+}
+
+.carousel-item::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.212);
+}
+
+.carousel-caption {
+  z-index: 9999;
+}
+
+.bottom_line {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.bottom_line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 20%;
+  height: 3px;
+  background-color: black;
+}
+
+.hero_section {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+
+.about_img {
+  background-image: url(../images/carusel-item-1.jpg);
+}
+
+.contact_img {
+  background-image: url(../images/carusel-item-2.jpg);
+}
+
+.hero_section::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.281);
+}
+
+.text_content {
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text_content h1 {
+  font-size: 90px;
+  text-align: center;
+}
+
+.form_section {
+    height: 500px;
+}
+
+.contact_form {
+  width: 100%;
+}
+
+.contact_form input:not(:last-child) {
+  width: 80%;
+  padding: 10px 5px;
+  background-color: transparent;
+  color: white;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid white;
+}
+
+.contact_form input[type="submit"] {
+  width: 80%;
+  padding: 10px 5px;
+  background-color: transparent;
+  color: white;
+  outline: none;
+  border: none;
+  border: 2px solid white;
+  transition: all 0.4s ease-in-out;
+}
+
+.contact_form input[type="submit"]:hover {
+    background-color: white;
+    color: black;
+}
+
+.contact_form input::placeholder {
+  color: rgb(225, 225, 225);
+}
