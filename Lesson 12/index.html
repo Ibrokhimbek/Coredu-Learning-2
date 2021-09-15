@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap website</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Offcanvas</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header bg-dark text-light">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+              </button>
+            </div>
+            <div class="offcanvas-body  bg-dark">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" style="height: 650px;">
+            <img src="images/carusel-item-1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" style="height: 650px;">
+            <img src="images/carusel-item-2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" style="height: 650px;">
+            <img src="images/carusel-item-3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="container">
+          <div class="row">
+              <div class="col-12 py-5">
+                  <h1><span class="badge bg-secondary">New</span> Our Products</h1>
+              </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100" style="height: 250px;">
+                <img src="images/carusel-item-1.jpg" class="card-img-top" alt="..." height="190px" style="object-fit: cover;">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    New
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100" style="height: 250px;">
+                <img src="images/carusel-item-2.jpg" class="card-img-top" alt="..." height="190px" style="object-fit: cover;">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    New
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100" style="height: 250px;">
+                <img src="images/carusel-item-3.jpg" class="card-img-top" alt="..." height="190px" style="object-fit: cover;">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    New
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="container py-5">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Stage #1
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta mollitia quidem eius blanditiis recusandae sed velit corrupti. Eum, deserunt tenetur! Eius maiores sunt minima nostrum, eveniet veniam optio exercitationem earum. Quisquam ducimus odio, ipsa accusamus velit ipsum animi veniam deleniti, iusto, quos facilis magni minima. Laudantium doloribus odio officia dolor!</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Stage #2
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur dignissimos tempora modi cum fugiat. Placeat enim animi, nulla incidunt, expedita praesentium quos magnam qui tempore rerum vel esse culpa ducimus perferendis aliquam facilis doloribus corrupti modi aperiam. Impedit, itaque. Voluptates blanditiis, neque quia, at possimus veniam illum harum ex totam nisi magni ipsa obcaecati repellendus. Iste odio ab assumenda quod nihil quis cumque sed cupiditate, aliquam odit ut commodi tempora. Dolorem architecto fugit modi doloribus quibusdam perspiciatis, excepturi necessitatibus quam sint, odio in officia autem laborum minus nihil quis? Eligendi!</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Stage #3
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore perspiciatis dolorum et a nulla, consectetur distinctio maxime deleniti provident inventore eaque praesentium veniam atque eos minima, maiores accusamus, labore ab commodi! Ratione labore possimus porro! Odit, ipsum rem sit vitae quidem deserunt fuga, quo cum iste accusamus est commodi deleniti voluptas aspernatur illum incidunt, distinctio quam. Saepe blanditiis autem aliquam vel, iure sapiente voluptates cupiditate delectus. Sed asperiores fugit nesciunt in rem praesentium odit laborum explicabo, enim veritatis unde deserunt nam voluptates, tempora, laudantium eum temporibus. Sed, ullam? Quos, iste expedita laudantium et eligendi repellat quibusdam maiores vel culpa labore explicabo? Ducimus libero sit esse sequi sed hic blanditiis quibusdam error velit repellat deleniti vero quaerat, modi nemo laudantium magni asperiores adipisci voluptate. Iste a reiciendis maxime provident deserunt doloremque aut quod earum dolore? Quidem quasi provident, mollitia sit, voluptatum perferendis est amet aliquam aliquid consequuntur a vitae voluptatibus modi corrupti. Aut laudantium cum corrupti eos at, blanditiis voluptatum, delectus tempora similique minima excepturi veritatis officia quo magni. Exercitationem hic suscipit sit pariatur impedit asperiores quas non quo omnis quasi incidunt quidem nisi consequatur error cupiditate ducimus excepturi, voluptatem illo alias eligendi saepe optio nam! Animi nulla obcaecati ducimus minus!</div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <footer>
+        <div class="container text-center py-3">
+          Copyright &copy; 2021
+        </div>
+      </footer>
+    
+    <script src="js/bundle.min.js"></script>
+</body>
+</html>
