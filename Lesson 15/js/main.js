@@ -18,3 +18,21 @@
 // var user1 = "Ibrohim"
 // console.log(user1)
 //! let
+// let x = 1
+// x = 200
+// let y = 5
+// console.log(x + y)
+
+//! const
+// const PI = 3.14159265
+// PI = 3.14
+// PI = PI + 15
+// console.log(PI);
+
+//! Practice
+// let x = 15
+// let y = 14
+// let z = 100
+// const result = x + (y - z) / (x + z)
+// const result2 = x % y
+// console.log(parseInt(result));
