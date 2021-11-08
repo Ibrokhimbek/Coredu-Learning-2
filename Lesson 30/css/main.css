@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#calculator {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#result {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: right;
+}
+
+.cal_btn {
+    font-size: 20px;
+    width: 30px;
+}
+
+.row {
+    margin-top: 5px;
+}
