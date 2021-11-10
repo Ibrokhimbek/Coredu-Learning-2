@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#navbar {
+    padding: 10px 0;
+    background-color: #1e1e1e;
+}
+
+.navbar_box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_list-item {
+    margin-left: 25px;
+}
+
+.nav_list-item-link {
+    text-decoration: none;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    transition: all 0.2s ease-in;
+}
+
+.nav_list-item-link:hover {
+    color: #7AC53F;
+}
+
+.close_btn, .open_btn {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    #navbar {
+        padding: 0;
+    }
+
+    .logo {
+        padding: 20px 0;
+    }
+    
+    .navbar_box {
+        position: relative;
+    }
+
+    .nav_list {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 250px;
+        height: 100vh;
+        flex-direction: column;
+        background-color: #1e1e1e;
+        padding: 60px 0 220px 20px;
+        align-items: flex-start;
+        transform: translateX(100%);
+    }
+
+    .nav_list-item{
+        margin: 0;
+    }
+
+    .nav_list-item:first-child {
+        align-self: flex-end;
+        margin-right: 10px;
+    }
+
+    .nav_list-item:first-child:hover .close_btn {
+        color: #7AC53F;
+        transform: rotate(180deg);
+    }
+
+    .open_btn, .close_btn {
+        display: block;
+    }
+
+    .close_btn, .open_btn {
+        padding: 0;
+        font-size: 30px;
+        background-color: transparent;
+        border: none;
+        color: white;
+        transition: all 0.4s ease-in;
+    }
+
+    .openedList {
+        animation: openedList 0.8s forwards ease-in;
+    }
+
+    .closedList {
+        animation: closedList 0.8s forwards ease-in;
+    }
+
+    @keyframes openedList {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+    
+    @keyframes closedList {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+        transform: translateX(100%);
+        }
+    }
+}
